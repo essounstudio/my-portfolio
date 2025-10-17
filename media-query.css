@@ -1,0 +1,212 @@
+:root {
+  --dark-color: #0b0b0d;
+  --dark-light: #141416;
+  --gray-color: #b3b3b3;
+}
+
+@media (max-width: 880px) {
+  .navbar-container {
+    margin: 10px 60px;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .navbar-container .navbar-menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.7rem !important;
+    position: absolute;
+    height: 100vh;
+    width: 250px;
+    top: 0;
+    right: 0;
+    padding: 5rem 1.5rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar-toggle {
+    display: block;
+    z-index: 999;
+  }
+
+  .navbar-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar-toggle.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .navbar-toggle.active .bar:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+
+  #hero .hero-content {
+    width: 500px;
+    margin-top: 40%;
+  }
+
+  #hero .hero-content .heading {
+    font-size: 100px;
+    text-align: center;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .card-description {
+    padding: 10px 50px;
+  }
+
+  .card img {
+    margin-bottom: 40px;
+  }
+
+  .project-wrapper {
+    display: none;
+  }
+
+  .project-wrapper-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .contact-wrapper {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+  #hero .hero-content {
+    width: 300px;
+    margin-top: 30vh;
+  }
+  #hero .hero-content .heading {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  #hero .hero-content .welcome-text {
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-left: 8px;
+  }
+
+  #hero .hero-content .subheadline p {
+    font-size: 14px;
+    margin-top: 0;
+  }
+
+  .text-divider {
+    padding: 10px;
+    margin-top: -5px;
+  }
+
+  .social-links {
+    display: none;
+  }
+
+  .social-links-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 100%;
+  }
+
+  .divider1,
+  .divider2 {
+    display: none;
+  }
+
+  #hero .brand {
+    margin-top: 50px;
+    display: none;
+  }
+
+  .social-text {
+    display: none;
+  }
+
+  .subheading {
+    font-size: 25px;
+  }
+
+  #about-info {
+    margin: 50px 50px 20px 50px;
+  }
+
+  #project-info {
+    margin: 50px 50px 20px 50px;
+  }
+
+  .about-img img {
+    width: 400px;
+  }
+
+  .paragraph {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .skill {
+    font-size: 12px;
+  }
+
+  #services-info {
+    margin: 50px 50px 20px 50px;
+  }
+  .card-title {
+    font-size: 20px;
+  }
+
+  .card-description {
+    padding: 10px 10px;
+  }
+
+  .card img {
+    margin-bottom: 20px;
+    width: 300px;
+  }
+
+  .project-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-wrapper-2 {
+    display: none;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  #contact-info .social-links,
+  #contact-info .brand,
+  #contact-info .social-text {
+    display: none;
+  }
+
+  #contact-info {
+    margin: 50px 50px 0 50px;
+  }
+
+  .contact-content {
+    margin-bottom: 20px;
+  }
+}
